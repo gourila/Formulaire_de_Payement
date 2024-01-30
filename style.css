@@ -6,19 +6,56 @@
 body{
     background: white;
     width: 600px;
-    margin: 100px auto;
+    margin: 20px auto;
     border: 2px solid black ;
     border-radius: 5px;
-    height: 700px;
+    height: 800px;
 }
 h1{
     padding-top: 40px;
+    padding-left: 20px;
 }
 h2{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
+   text-align: left;
 }
 .container{
-    width: 550px ;
+    width: 500px ;
     margin: 0 auto;
+    text-align: center;
+}
+.Comment{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 350px;
+
+}
+.commentaire{
+   padding-bottom: 2px;
+}
+.pseudo{
+padding-top: 10px;
+
+}
+
+
+.boutton
+{
+    display: flex;
+    width: 400px;
+    padding-top: 40px;
+    margin: auto;
+
+
+
+}
+button{
+    width: 200px;
+    height: 40px;
+}
+input{
+    width: 220px;
+    height: 25px;
+    padding-top: 25px;
 }
