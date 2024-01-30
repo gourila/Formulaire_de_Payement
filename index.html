@@ -3,55 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulaire de payement</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-<h1>Formulaire de payement</h1>
-
+<h1>Formulaire de paiement</h1>
 <div class="container">
-<h2>informations de contact</h2>
+    <h2>Informations de contact</h2>
+    <form action="">
+        <fieldset class="">
+            Nom* :
+            <input type="text" name="Nom" id="nomUtilisateur" size="29" minlength="2" maxlength="100" required>
+            <label for="nomUtilisateur"></label>
 
-<form action="">
-<fieldset>
-    <label for="">
-       Nom* :  <input type="text" name="Nom" size="29" maxlength="100"><br>
-        Courriel :  <input type="text" name="Nom" size="29" maxlength="40"><br>
-        Téléphone :  <input type="number" name="teléphone" size="29" maxlength="40"><br>
-        Compagnie :  <input type="text" name="compagnie" size="29" maxlength="40"><br>
-        <form action="choisir_provience">
-            Province :   <select name="province">
-            <option value="       "></option>
-            <option value="Québec">Québec</option>  <!-- pas necessaire de mettre les les names et les id -->
-            <option value="Ontario">Ontario</option>
-            <option value="Manitoba"></option>
-            <br></select>
-        </form>
-    </label>
-</fieldset>
-    <h2>Information sur la commande</h2>
-<fieldset>
-    Pommes <input type="number" name="Nom" size="29" maxlength="40">
-    <div class="slider">
-        <label for="">Patates</label><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    </div>
+            Courriel :  <input type="text" value="Customer@company.com" readonly disabled name="Nom" size="29" maxlength="40" id="courrielUtilisateur">
+            <label for="courrielUtilisateur"></label>
 
-</fieldset>
-    <h2>Vos commentaires </h2>
-    <fieldset>
-       <div class="pseudo"> <label for="">Pseudonyme(3-9 caractère):</label><input type="text" name="Nom" size="29" maxlength="9"> </div>
-        <p class="Comment">Commentaire :</p>
-        <div class="commentaire"><textarea id="commentaire" name="commentaire" rows="2" cols="60">un long message</textarea></div>
-        <br>
+            Téléphone :  <input type="text" name="teléphone" size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
+            <label for="téléphoneUtilisateur"></label>
+
+            Compagnie :  <input type="text" name="compagnie" size="29" maxlength="40" id="idCompagnie">
+            <label for="idCompagnie"></label>
+
+            Province :
+            <select id="provinceCanada" required>
+                <option value=""></option>
+                <option value="Quebec">Québec</option>  <!-- pas necessaire de mettre les les names et les id -->
+                <option value="Ontario">Ontario</option>
+                <option value="Manitoba">Manitoba</option>
+            </select>
+            <label for="provinceCanada"></label>
+        </fieldset>
+        <h2>Information sur la commande</h2>
+        <fieldset>
+
+            Pommes <input type="number" name="pommes" size="29" min="0"  max="40" ID="NbPommes">
+            <label for="NbPommes"></label>
+            Quantité: <span id="PommesQt"> </span>
 
 
+            <div class="slider">
+                Patates <input type="range" name="patates" min="0" max="40" value="40" class="slider" id="NbPatates">
+                <label for="NbPatates"></label>
+                Quantité: <span id="PatatesQt"> </span>
+            </div>
+        </fieldset>
 
-    </fieldset>
-    <div class="boutton">
-    <button type="submit"> Envoyer</button> <button type="reset">Annuler</button>
-</div>
+        <h2>Vos commentaires</h2>
+        <fieldset>
+            <input type="text" name="Pseudo-Nom" size="29" minlength="3" maxlength="9" id="PseudoName">
+            <label for="PseudoName">Pseudonyme(3-9 caractère):</label>
 
-</form>
+            <p>Commentaires</p>
+            <textarea  name="w3review" rows="4" cols="40" id="CommentairesUtilisateur">Commentaires....</textarea>
+            <label for="CommentairesUtilisateur"></label>
+            <br>
+
+
+
+        </fieldset>
+        <button type="submit"> Envoyer </button> <button type="reset"> Annuler </button>
+
+
+    </form>
 </div>
 
 
