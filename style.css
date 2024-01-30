@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    width: 600px;
+    margin: 100px auto;
+    border: 2px solid black ;
+    border-radius: 5px;
+    height: 700px;
+}
+h1{
+    padding-top: 40px;
+}
+h2{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.container{
+    width: 550px ;
+    margin: 0 auto;
+}

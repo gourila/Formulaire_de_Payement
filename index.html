@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de payement</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<h1>Formulaire de payement</h1>
+
+<div class="container">
+<h2>informations de contact</h2>
+
+<form action="">
+<fieldset>
+    <label for="">
+       Nom* :  <input type="text" name="Nom" size="29" maxlength="100">
+        Courriel :  <input type="text" name="Nom" size="29" maxlength="40">
+        Téléphone :  <input type="number" name="teléphone" size="29" maxlength="40">
+        Compagnie :  <input type="text" name="compagnie" size="29" maxlength="40">
+        <form action="choisir_provience">
+            Province :   <select name="province">
+            <option value="       "></option>
+            <option value="Québec">Québec</option>  <!-- pas necessaire de mettre les les names et les id -->
+            <option value="Ontario">Ontario</option>
+            <option value="Manitoba"></option>
+            <br></select>
+        </form>
+    </label>
+</fieldset>
+    <h2>Information sur la commande</h2>
+<fieldset>
+    Pommes <input type="number" name="Nom" size="29" maxlength="40">
+    <div class="slider">
+        <label for="">Patates</label><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+
+</fieldset>
+    <h2>Vos commentaires</h2>
+    <fieldset>
+        <label for="">Pseudonyme(3-9 caractère):</label><input type="text" name="Nom" size="29" maxlength="9"> 
+        <p>Commentaire</p>
+        <textarea id="w3review" name="w3review" rows="4" cols="40">un long message</textarea>
+        <br>
+
+
+
+    </fieldset>
+    <button type="submit"> Envoyer</button> <button type="reset">Annuler</button>
+
+
+</form>
+</div>
+
+
+</body>
+</html>
