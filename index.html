@@ -10,22 +10,25 @@
 <h1>Formulaire de paiement</h1>
 <div class="container">
     <h2>Informations de contact</h2>
+
     <form action="">
-        <fieldset class="">
-            Nom* :
+
+      <fieldset class="contact">
+        <div id="contact">
+           <p>Nom* :</p>
             <input type="text" name="Nom" id="nomUtilisateur" size="29" minlength="2" maxlength="100" required>
-            <label for="nomUtilisateur"></label>
+            <label for="nomUtilisateur"></label><br>
 
-            Courriel :  <input type="text" value="Customer@company.com" readonly disabled name="Nom" size="29" maxlength="40" id="courrielUtilisateur">
-            <label for="courrielUtilisateur"></label>
+           <p>Courriel :</p>   <input type="text" value="Customer@company.com" readonly disabled name="Nom" size="29" maxlength="40" id="courrielUtilisateur">
+            <label for="courrielUtilisateur"></label><br>
 
-            Téléphone :  <input type="text" name="teléphone" size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
-            <label for="téléphoneUtilisateur"></label>
+           <p>Téléphone :</p>   <input type="text" name="teléphone" size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
+            <label for="téléphoneUtilisateur"></label><br>
 
-            Compagnie :  <input type="text" name="compagnie" size="29" maxlength="40" id="idCompagnie">
-            <label for="idCompagnie"></label>
+           <p>Compagnie :</p>   <input type="text" name="compagnie" size="29" maxlength="40" id="idCompagnie">
+            <label for="idCompagnie"></label><br>
 
-            Province :
+           <p>Province :</p>
             <select id="provinceCanada" required>
                 <option value=""></option>
                 <option value="Quebec">Québec</option>  <!-- pas necessaire de mettre les les names et les id -->
@@ -33,10 +36,12 @@
                 <option value="Manitoba">Manitoba</option>
             </select>
             <label for="provinceCanada"></label>
-        </fieldset>
-        <h2>Information sur la commande</h2>
-        <fieldset>
+        </div>
+      </fieldset>
 
+        <h2>Information sur la commande</h2>
+      <fieldset>
+        <div id="info-commande">
             Pommes <input type="number" name="pommes" size="29" min="0"  max="40" ID="NbPommes">
             <label for="NbPommes"></label>
             Quantité: <span id="PommesQt"> </span>
@@ -47,21 +52,22 @@
                 <label for="NbPatates"></label>
                 Quantité: <span id="PatatesQt"> </span>
             </div>
-        </fieldset>
+        </div>
+     </fieldset>
 
-        <h2>Vos commentaires</h2>
-        <fieldset>
-            <input type="text" name="Pseudo-Nom" size="29" minlength="3" maxlength="9" id="PseudoName">
-            <label for="PseudoName">Pseudonyme(3-9 caractère):</label>
+            <h2>Vos commentaires</h2>
+            <fieldset>
+                Pseudonyme(3-9 caractère): <input type="text" name="Pseudo-Nom" size="29" minlength="3" maxlength="9" id="PseudoName">
+                <label for="PseudoName"></label>
 
-            <p>Commentaires</p>
-            <textarea  name="w3review" rows="4" cols="40" id="CommentairesUtilisateur">Commentaires....</textarea>
-            <label for="CommentairesUtilisateur"></label>
+                <p>Commentaires</p>
+                <textarea  name="w3review" rows="2.5" cols="55" id="CommentairesUtilisateur">Commentaires....</textarea>
+                <label for="CommentairesUtilisateur"></label>
             <br>
 
 
 
-        </fieldset>
+     </fieldset>
         <button type="submit"> Envoyer </button> <button type="reset"> Annuler </button>
 
 

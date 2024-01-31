@@ -10,52 +10,63 @@ body{
     border: 2px solid black ;
     border-radius: 5px;
     height: 800px;
+
 }
 h1{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 20px;
 }
 h2{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
    text-align: left;
 }
 .container{
     width: 500px ;
     margin: 0 auto;
-    text-align: center;
-}
-.Comment{
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-right: 350px;
 
 }
-.commentaire{
-   padding-bottom: 2px;
-}
+
+
 .pseudo{
 padding-top: 10px;
-
 }
 
-
-.boutton
-{
-    display: flex;
-    width: 400px;
-    padding-top: 40px;
-    margin: auto;
-
-
-
-}
 button{
-    width: 200px;
+    width: 200px;background: lightgrey;
     height: 40px;
+
+
 }
 input{
     width: 220px;
-    height: 25px;
-    padding-top: 25px;
+    height: 30px;
+}
+#provinceCanada{
+    width: 220px;
+    height: 30px;
+}
+#contact{
+
+    display: block;
+    justify-content: center;
+    text-align: center;
+ }
+
+.contact p{
+    text-align: left;
+    position: relative;
+    top: 22px;
+    left: 40px;
+}
+.contact {
+padding-bottom: 20px;
+}
+#info-commande{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+h1, h2{
+    color: gray;
 }
