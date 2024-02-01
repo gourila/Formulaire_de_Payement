@@ -70,3 +70,18 @@ padding-bottom: 20px;
 h1, h2{
     color: gray;
 }
+#commentaire{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.commentaire{
+    padding-right: 320px;
+}
+#bouttons{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+}

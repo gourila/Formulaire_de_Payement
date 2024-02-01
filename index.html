@@ -22,7 +22,7 @@
            <p>Courriel :</p>   <input type="text" value="Customer@company.com" readonly disabled name="Nom" size="29" maxlength="40" id="courrielUtilisateur">
             <label for="courrielUtilisateur"></label><br>
 
-           <p>Téléphone :</p>   <input type="text" name="teléphone" size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
+           <p>Téléphone :</p>   <input type="text" name="teléphone" value=" (555) 555-5555" size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
             <label for="téléphoneUtilisateur"></label><br>
 
            <p>Compagnie :</p>   <input type="text" name="compagnie" size="29" maxlength="40" id="idCompagnie">
@@ -31,7 +31,7 @@
            <p>Province :</p>
             <select id="provinceCanada" required>
                 <option value=""></option>
-                <option value="Quebec">Québec</option>  <!-- pas necessaire de mettre les les names et les id -->
+                <option value="Quebec">Québec</option>
                 <option value="Ontario">Ontario</option>
                 <option value="Manitoba">Manitoba</option>
             </select>
@@ -44,32 +44,30 @@
         <div id="info-commande">
             Pommes <input type="number" name="pommes" size="29" min="0"  max="40" ID="NbPommes">
             <label for="NbPommes"></label>
-            Quantité: <span id="PommesQt"> </span>
+            <span id="PommesQt"> </span>
 
 
             <div class="slider">
                 Patates <input type="range" name="patates" min="0" max="40" value="40" class="slider" id="NbPatates">
                 <label for="NbPatates"></label>
-                Quantité: <span id="PatatesQt"> </span>
+                <span id="PatatesQt"> </span>
             </div>
         </div>
      </fieldset>
 
             <h2>Vos commentaires</h2>
-            <fieldset>
-                Pseudonyme(3-9 caractère): <input type="text" name="Pseudo-Nom" size="29" minlength="3" maxlength="9" id="PseudoName">
-                <label for="PseudoName"></label>
+        <fieldset>
+            <div id="commentaire">
 
-                <p>Commentaires</p>
-                <textarea  name="w3review" rows="2.5" cols="55" id="CommentairesUtilisateur">Commentaires....</textarea>
-                <label for="CommentairesUtilisateur"></label>
-            <br>
-
-
-
+                <label for="PseudoName">Pseudonyme (3-9 caractère) :</label>
+                 <input type="text" name="Pseudo-Nom" size="45" minlength="3" maxlength="9" id="PseudoName">
+                <label for="CommentairesUtilisateur"><span class="commentaire">Commentaires :</span></label>
+               <textarea  name="w3review" rows="2.5" cols="55" id="CommentairesUtilisateur">Commentaires....</textarea>
+            </div>
      </fieldset>
+        <div id="bouttons">
         <button type="submit"> Envoyer </button> <button type="reset"> Annuler </button>
-
+        </div>
 
     </form>
 </div>
