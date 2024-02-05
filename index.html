@@ -11,21 +11,21 @@
 <div class="container">
     <h2>Informations de contact</h2>
 
-    <form action="">
+    <form action="mailto:Customer@company.com" method="post">
 
       <fieldset class="contact">
         <div id="contact">
            <p>Nom* :</p>
-            <input type="text" name="Nom" id="nomUtilisateur" size="29" minlength="2" maxlength="100" required>
+            <input type="text" name="Nom" id="nomUtilisateur" size="29" placeholder="Votre nom" minlength="2" maxlength="100" required>
             <label for="nomUtilisateur"></label><br>
-
-           <p>Courriel :</p>   <input type="text" value="Customer@company.com" readonly disabled name="Nom" size="29" maxlength="40" id="courrielUtilisateur">
+                                                   <!--Customer@company.com par default pour lexercice-->
+           <p>Courriel :</p><input type="text" value="Customer@company.com" readonly disabled name="Nom" size="29" maxlength="40" id="courrielUtilisateur">
             <label for="courrielUtilisateur"></label><br>
 
-           <p>Téléphone :</p>   <input type="text" name="teléphone" value=" (555) 555-5555" size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
+           <p>Téléphone :</p><input type="text" name="teléphone" placeholder="012 345 6789"  size="29" maxlength="40" id="téléphoneUtilisateur" pattern="[\d]{10}">
             <label for="téléphoneUtilisateur"></label><br>
 
-           <p>Compagnie :</p>   <input type="text" name="compagnie" size="29" maxlength="40" id="idCompagnie">
+           <p>Compagnie :</p><input type="text" name="compagnie" size="29" maxlength="40" id="idCompagnie">
             <label for="idCompagnie"></label><br>
 
            <p>Province :</p>
@@ -48,9 +48,10 @@
 
 
             <div class="slider">
-                Patates <input type="range" name="patates" min="0" max="40" value="40" class="slider" id="NbPatates">
+                Patates <input type="range" name="patates" min="0" max="40" value="0" step="5" class="slider" id="NbPatates" oninput="Afficherpetake()">
+                <p>Nombres de patates:<span id="PatatesQt"></span></p>
                 <label for="NbPatates"></label>
-                <span id="PatatesQt"> </span>
+
             </div>
         </div>
      </fieldset>
@@ -60,7 +61,7 @@
             <div id="commentaire">
 
                 <label for="PseudoName">Pseudonyme (3-9 caractère) :</label>
-                 <input type="text" name="Pseudo-Nom" size="45" minlength="3" maxlength="9" id="PseudoName">
+                 <input type="text" name="Pseudo-Nom" size="45" minlength="3" maxlength="9" id="PseudoName" pattern="^.{3,9}$">
                 <label for="CommentairesUtilisateur"><span class="commentaire">Commentaires :</span></label>
                <textarea  name="w3review" rows="2.5" cols="55" id="CommentairesUtilisateur">Commentaires....</textarea>
             </div>
