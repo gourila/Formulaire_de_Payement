@@ -11,7 +11,7 @@
 <div class="container">
     <h2>Informations de contact</h2>
 
-    <form action="mailto:Customer@company.com" method="post">
+    <form action="mailto:Customer@company.com" onsubmit="Validation()" method="post">
 
       <fieldset class="contact">
         <div id="contact">
@@ -31,9 +31,9 @@
            <p>Province :</p>
             <select id="provinceCanada" required>
                 <option value=""></option>
-                <option value="Quebec">Québec</option>
-                <option value="Ontario">Ontario</option>
-                <option value="Manitoba">Manitoba</option>
+                <option value="819">Québec</option>
+                <option value="613">Ontario</option>
+                <option value="204">Manitoba</option>
             </select>
             <label for="provinceCanada"></label>
         </div>
@@ -61,7 +61,7 @@
             <div id="commentaire">
 
                 <label for="PseudoName">Pseudonyme (3-9 caractère) :</label>
-                 <input type="text" name="Pseudo-Nom" size="45" minlength="3" maxlength="9" id="PseudoName" pattern="^.{3,9}$">
+                 <input type="text" name="Pseudo-Nom" placeholder="Abc!, Efg? Qwe$" size="45" minlength="3" maxlength="9" id="PseudoName" pattern="^[A-Z]{1}[A-z]{3,9}[!$?]$" >
                 <label for="CommentairesUtilisateur"><span class="commentaire">Commentaires :</span></label>
                <textarea  name="w3review" rows="2.5" cols="55" id="CommentairesUtilisateur">Commentaires....</textarea>
             </div>

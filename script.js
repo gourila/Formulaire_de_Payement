@@ -1,40 +1,35 @@
-/*
-* AFFICHER LES PATATES
-*
-*/
+const patates =document.getElementById("PatatesQt");
+const pommes =document.getElementById("PommesQt");
+const province =document.getElementById("provinceCanada")
+const telephone =document.getElementById("téléphoneUtilisateur")
+
+/*-- AFFICHER LES PATATES --*/
 function Afficherpetake() {
-    let x = document.getElementById("NbPatates").value;
-    document.getElementById("PatatesQt").innerHTML = x;
+    let SliderQt = document.getElementById("NbPatates").value;
+    document.getElementById("PatatesQt").innerHTML = SliderQt;
 }
 
 //Verifier que le nombre de pommes est < que patates
-const QTpommes = document.getElementById("NbPommes").value;
-const QTPatates = document.getElementById("NbPatates").value;
-function PlusDePetakes()
-{
-    if(QTpommes > QTPatates)
-    {
-        alert("You MUST have more Taters");
-
-    }
-}
 
 
 
 
-
+//Function da validation
+//ne fonctionne pas encore *****
 function Validation()
 {
-//ne fonctionne pas encore
-    let NumeroUtilisateur = document.getElementById("téléphoneUtilisateur").value;
-    let Resultat = NumeroUtilisateur.startsWith("819");
-    let ChoixProvince = document.getElementById("provinceCanada").value;
-    if (ChoixProvince === "Quebec")
+    if (province.value !== "819" )
     {
-        if (Resultat === false)
-        {
-            alert("Vous devez avoir 819")
-        }else {return true}
+       alert("md")
     }
+    if (province.value !== "613" )
+    {
+        alert("yt")
+    }
+    if (province.value !== "204" )
+    {
+       alert("fnf2")
+    }
+
 }
 
